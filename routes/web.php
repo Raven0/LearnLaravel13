@@ -26,3 +26,9 @@ Route::get('/produk/{type}', function($type){
 Route::get('form', 'learnController@form');
 
 Route::post('proses', 'learnController@proses');
+
+Route::get('get', function(){
+    var_dump($_GET);
+});
+
+Route::post('coba', 'learnController@coba');

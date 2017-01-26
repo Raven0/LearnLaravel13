@@ -5,7 +5,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="proses" method="post">
+    <form action="coba" method="post">
         {{ csrf_field() }}
         <label>
             Nama:
