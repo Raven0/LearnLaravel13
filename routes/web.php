@@ -23,12 +23,14 @@ Route::get('/produk/{type}', function($type){
     return view('produk.detail', compact('type'));
 });
 
-Route::get('form', 'learnController@form');
+Route::get('/form', 'learnController@form');
 
-Route::post('proses', 'learnController@proses');
+Route::post('/proses', 'learnController@proses');
 
-Route::get('get', function(){
+Route::get('/get', function(){
     var_dump($_GET);
 });
 
-Route::post('coba', 'learnController@coba');
+Route::post('/coba', 'learnController@coba');
+
+Route::get('/siswa', 'siswaController@index');

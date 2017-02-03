@@ -30,13 +30,13 @@ class learnController extends Controller
         $name = $coba->input('nama');
         $score = $coba->input('nilai');
         
-        if($score > 90){
+        if($score >= 90){
             $predikat = "A";
-        }else if($score > 80){
+        }else if($score >= 80){
             $predikat = "B";
-        }else if($score > 70){
+        }else if($score >= 70){
             $predikat = "C";
-        }else if($score > 60){
+        }else if($score >= 60){
             $predikat = "D";
         }else{
             $predikat = "E";
